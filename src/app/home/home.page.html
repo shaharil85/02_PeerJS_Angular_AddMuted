@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <div id = "myList">
+  </div>
+  <h1>My ID:<br>{{mypeerid}}</h1>
+  <ion-input [(ngModel)]="anotherid" style="border: solid greenyellow;" type="text" placeholder="Peer ID"></ion-input>
+  <ion-button (click)="connectToPeer()" expand="block" fill="outline" shape="round">
+    Connect to Peer
+  </ion-button>
+  <ion-button (click)="mediaCall()" expand="block" fill="outline" shape="round">
+    Coonect to Video Peer
+  </ion-button>
+  <ion-button (click)="playStop()" expand="block" fill="outline" shape="round" class="main__video_button">
+    <span>Stop Video</span>
+  </ion-button>
+  <ion-button (click)="muteUnmute()" expand="block" fill="outline" shape="round" class="main__mute_button">
+    <span>Mute Audio</span>
+  </ion-button>
+</ion-content>
